@@ -34,8 +34,13 @@
 
     <section class="jumbotron text-center">
       <div class="container">
-        <h1 class="jumbotron-heading">DJANGO</h1>
-        <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1 class="jumbotron-heading">ジェリックフェデラー</h1>
+        <h1 class="jumbotron-heading">ホームページ</h1>
+        <p class="lead text-muted">
+          このサイトを勉強とポートフォリオのため作成しました。
+          <br>
+          フロントエンドはHTML、CSS、Javascriptです。そしてバックエンドはDjangoというPythonのWeb frameworkです。
+        </p>
         <p>
           <a href="mailto:jericfederer97@gmail.com" class="btn btn-primary my-2">Email me</a>
         </p>
@@ -47,7 +52,7 @@
         <div class="row">
 
           {% for job in jobs.all %}
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" src="{{ job.image.url }}" />
               <div class="card-body">
